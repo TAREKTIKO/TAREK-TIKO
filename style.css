@@ -347,7 +347,61 @@ footer .footer-content p{
     
 
 }
-@media screen and (max-width: 640px) {
 
+@media screen and (max-width: 420px) {
 
+    /* nav menu and logo */
+
+    .nav-menu{
+        display: block;
+        padding: 25px;
+    }
+    .nav-logo {
+        justify-content: center;
+    }
+    .nav-logo a{
+        justify-content: center;
+        padding: auto;
+    }
+
+    /* hero-section */
+
+    .hero-section {
+        margin: 0;
+    }
+
+    .hero-text h1{
+        font-size: 30px;
+    }
+
+    .hero-text p{
+        font-size: 15px;
+    }
+
+    /* gallery-section & my projects section */
+
+    .gallery-section, .my-projects{
+        padding: 100px 0;
+    }
+    .gallery-section h3 , .my-projects h3{
+        font-size: 25px;
+    }
+
+    /* footer */
+
+    footer .footer-content {
+        padding: 50px;
+    }
+
+    footer .footer-content h3{
+        font-size: 40px;
+    }
+
+    footer .footer-content p{
+        font-size: 20px;
+    }
+
+    .contact-icons a{
+        font-size: 20px;
+    }
 }
