@@ -162,6 +162,18 @@ body{
     padding-top: 35px;
 }
 
+.hero-text a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    transition: 0.2s ease;
+}
+
+.hero-text .talk-btn:hover{
+    border-bottom: 3px solid rgba(255, 255, 255, 0.493);
+    color: rgba(255, 255, 255, 0.733);
+}
+
 .hero-text .hero-btn{
     text-decoration: none;
     color: white;
@@ -182,7 +194,8 @@ body{
 
 .gallery-section{
     background-color: white;
-    padding: 150px 0px;
+    /* اخر 0px اللي كانت بتفصل gallery عن footer */
+    padding: 150px 0px 0px;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -209,28 +222,85 @@ body{
 }
 
 .gallery-section .projects .cards{
-    display: flex;
+    display: block;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     padding: 45px;
-    border: 2px solid black;
     border-radius: 15px;
     margin: 35px;
-    box-shadow: 0px 0px 16px 0px rgb(0, 0, 0.5);
-    background-color: black;
 }
 
 .gallery-section .projects .cards-img{
     height: 50%;
-    width: 50%;
-    padding: 0px 15px;
+    width: 100%;
     border-radius: 35px;
+    border: black 3px solid;
+}
+
+.gallery-section .projects .card-header{
+    color: white;
+    color: black;
+    border-radius: 5px;
+    font-size: 35px;
+    text-align: center;
+    padding: 20px 30px 10px;
+    font-weight: bold;
+}
+
+.gallery-section .projects .wb-coffee{
+    color: #3b141c;
+}
+
+.gallery-section .projects .wb-trafalgar{
+    color: #007bff;
+}
+
+.gallery-section .projects .wb-lookscout{
+    color: #437EF7;
+}
+
+.gallery-section .projects .wb-zakah{
+    color: #ab6422;
+}
+
+.gallery-section .projects .card-details{
+    text-align: center;
+    color: black;
+    padding: 0% 20%;
+    font-size: 20px;
+}
+
+.gallery-section .projects .card-details-link{
+    text-decoration: none;
+    color: #3b141c;
+    font-weight: bold;
+}
+
+.gallery-section .projects .project-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    font-weight: bold;
+    font-size: 30px;
+    padding: 10px 20px;
+    border: black 5px solid;
+    border-radius: 10px;
+    margin: 50px;
+    transition: 0.5s ease;
+}
+
+.gallery-section .projects .project-btn:hover{
+    color: red;
+    border: red 5px solid;
+    padding: 15px 25px;
 }
 
 
 /* My projects section */
-.my-projects{
+
+/* .my-projects{
     background-color: white;
     padding: 150px 0px;
     align-items: center;
@@ -257,7 +327,7 @@ body{
 
 .my-projects .projects .cards{
 
-}
+} */
 
 
 
@@ -362,15 +432,15 @@ footer .footer-content p{
     .gallery-section .projects .cards .cards-img{
         height: 100%;
         width: 100%;
-        padding: 25px 0px;
+        border-radius: none;
+    }
+
+    .gallery-section .projects .project-btn{
+        margin-bottom: 90px;
     }
 
 
     /* projects-section */
-
-    .my-projects .projects .cards .cards-img {
-        display: none;
-    }
 
 }
 
@@ -429,7 +499,7 @@ footer .footer-content p{
     }
 
     .hero-text h1{
-        font-size: auto;
+        font-size: 60px;
         text-shadow: 0 0 3px #000000;
     }
 
@@ -438,14 +508,34 @@ footer .footer-content p{
         text-shadow: 0 0 3px #000000;
     }
 
+    .hero-text a{
+        font-size: 20px;
+    }
+
     /* gallery-section & my projects section */
 
     .gallery-section, .my-projects{
-        padding: 100px 0;
+        padding: none;
     }
     .gallery-section h3 , .my-projects h3{
         font-size: 40px;
         letter-spacing: 0px;
+    }
+    .gallery-section .projects .cards{
+        padding: 0px;
+        margin: 35px 0px;
+        border-radius: none;
+        border: none;
+    }
+    .gallery-section .projects .cards-img{
+        border: none;
+        border-radius: none;
+    }
+    .gallery-section .projects .card-details{
+        padding: 0% 10%;
+    }
+    .gallery-section .projects .project-btn{
+        font-size: 20px;
     }
 
     /* footer */
@@ -529,10 +619,17 @@ footer .footer-content p{
         font-size: 15px;
     }
 
+    .hero-text a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    transition: 0.2s ease;
+}
+
     /* gallery-section & my projects section */
 
     .gallery-section, .my-projects{
-        padding: 100px 0;
+        padding: 100px 0px 0px;
     }
 
     .gallery-section h3 , .my-projects h3{
@@ -549,6 +646,22 @@ footer .footer-content p{
         height: 100%;
         width: 100%;
         border-radius: 5px;  
+        border: 2px solid black;
+        border-left: none;
+        border-right: none;
+    }
+
+    .gallery-section .projects .card-header{
+        font-size: 25px;
+    }
+
+    .gallery-section .projects .card-details{
+        font-size: 15px;
+        padding: 0% 10%;
+    }
+
+    .gallery-section .projects .project-btn{
+        font-size: 15px;
     }
 
     /* footer */
