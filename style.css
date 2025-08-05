@@ -89,6 +89,7 @@ body{
     padding-top: 10px;
 }
 
+
 .nav-links a{
     text-decoration: none;
     color: white;
@@ -689,5 +690,14 @@ footer .footer-content p{
     .contact-icons a{
         font-size: 15px;
     }
+}
 
+
+/* this file is for secondary style for projects pages */
+
+/* Projects */
+
+/* navlinks */
+.nav-menu .nav-links .burger-text {
+    color: white    ;
 }
