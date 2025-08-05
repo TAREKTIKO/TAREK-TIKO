@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cairo:slnt,wght@-11..11,200..1000&family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 *{
     margin: 0;
@@ -246,6 +247,7 @@ body{
     text-align: center;
     padding: 20px 30px 10px;
     font-weight: bold;
+    font-family: poppins, sans-serif;
 }
 
 .gallery-section .projects .wb-coffee{
@@ -267,14 +269,16 @@ body{
 .gallery-section .projects .card-details{
     text-align: center;
     color: black;
-    padding: 0% 20%;
+    padding: 0% 22%;
     font-size: 20px;
+    font-family: poppins, sans-serif;
 }
 
 .gallery-section .projects .card-details-link{
     text-decoration: none;
     color: #3b141c;
     font-weight: bold;
+    font-family: poppins, sans-serif;
 }
 
 .gallery-section .projects .project-btn{
@@ -437,6 +441,10 @@ footer .footer-content p{
 
     .gallery-section .projects .project-btn{
         margin-bottom: 90px;
+    }
+
+    .gallery-section .projects .card-details{
+        padding: 0% 8%;
     }
 
 
